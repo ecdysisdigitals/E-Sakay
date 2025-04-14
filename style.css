@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #7A4F3D; /* Muted Brown */
-  height: 5pc;
+  height: 3pc;
   color: white;
   padding: 10px 20px;
   position: sticky;
@@ -286,7 +286,7 @@ video:fullscreen {
 .researcher h2 {
   font-size: 2rem;
   margin-top: 18px;
-  margin-bottom: 1%;
+
   font-family: 'Georgia', serif;
   color: #702201; /* Muted Brown */
   text-align: center;
@@ -309,7 +309,7 @@ video:fullscreen {
   align-items: center; /* Align cards vertically */
   gap: 5%; /* Add a 2% gap between the cards */
   margin: 0 auto; /* Center the grid itself */
-  margin-top: 3%;
+  margin-top: 1%;
   max-width: 80%; /* Limit the width of the grid */
 }
 
@@ -430,6 +430,6 @@ video:fullscreen {
 footer {
   color: #060606;
   text-align: left;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 
