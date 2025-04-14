@@ -1,3 +1,5 @@
+css
+
 /* styles.css */
 
 /* General Reset */
@@ -6,6 +8,15 @@
   padding: 0;
   box-sizing: border-box;
   
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top */
+  background-color: #fff; /* Adjust to match your design */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional for effect */
 }
 
 body {
@@ -58,6 +69,11 @@ body {
   font-family: 'Georgia', serif;
   transition: color 0.3s ease;
 }
+.nav-link.active {
+  color: #ff9900; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #ff9900; /* Optional underline */
+}
 
 .nav-links a:hover {
   color: #dfb392; /* Soft Beige Hover */
@@ -77,33 +93,55 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-image: url('traysikel-background.jpg'); /* Vintage Tricycle Image */
+  background-image: url('image/cover1.jpg'); /* Vintage Tricycle Image */
   background-size: cover;
   background-position: center;
-  color: rgb(10, 10, 10);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle Shadow for Readability */
+  color: rgb(248, 248, 248);
+  text-shadow: 2px 2px 4px rgb(129, 125, 125); /* Subtle Shadow for Readability */
+ background-attachment: fixed;
 }
+.text-bg-box {
+  background-color: rgba(238, 236, 236, 0.6); /* Black with 50% opacity */
+  padding: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 10px;
+  color: white;
+  width: fit-content;
+  align-items: center;
+  padding-bottom: 4%;
 
+
+}
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 2px;
   font-family: 'Georgia', serif;
+  margin-top: 2%;
+  color: black;
 }
 
 .hero p {
   font-size: 1.2rem;
-  font-family: 'Courier New', Courier, monospace;
-  margin-bottom: 250px;
+  font-family: 'Times New Roman', Times, serif; 
+  margin-bottom: 90px;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
+  font-weight: 500;
 }
 
 .hero .btn {
   padding: 10px 20px;
-  background-color: #8B0000; /* Deep Red Button */
-  color: white;
+  background-color: #664229; /* Deep Red Button */
+  color: rgb(244, 242, 242);
   text-decoration: none;
   border-radius: 5px;
+  text-shadow: #060606;
   font-family: 'Georgia', serif;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
+  margin-top: 100%;
   
 }
 
@@ -117,18 +155,25 @@ body {
   justify-content: center;
 
 }
+.home-logo {
+  width: 200px; /* Adjust this as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* kwento section*/
 .Kwento  {
   text-align: center;
   background-size: cover;
+  background-attachment: fixed;
   
 }
 .Kwento h2 {
   font-size: 2rem;
   font-family:'Times New Roman', Times, serif;
   size: 2rem;
-  margin-bottom: %;
+  margin-bottom: 1%;
   padding-top: 1%;
  
 }
@@ -145,7 +190,7 @@ body {
   border: none;
   font-size: 1.2rem;
   font-family: 'Times New Roman', Times, serif;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 20px;
@@ -158,7 +203,7 @@ body {
 }
 
 /* Highlight the active button */
-.button-container button.active {
+.button-container button.active-btn {
   background-color: #80471c; /* Deep Red for active state */
   font-weight: bold; /* Make the text bold */
   
@@ -174,7 +219,7 @@ body {
   border: 1px solid #ddd;
   margin-left: 5%;
   margin-right: 5%;
-  border-radius: 20px;
+  border-radius: 10px;
   background-image: url('https://i.pinimg.com/736x/d5/89/e9/d589e960b44b789c92c354832ac8dbbf.jpg');
   background-size: cover;
   text-align: center;
@@ -216,72 +261,16 @@ body {
   text-align: center;
   font-style: italic;
   color: #888;
+
+}
+video:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures the video covers the screen without distortion */
 }
 
 
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    background-size: cover;
-}
-.gallery h2 {
-  margin-top: 5%;
-  font-size: 2rem;
-  font-family:'Times New Roman', Times, serif;
-  size: 2rem;
-  margin-bottom: 2.5%;
-  text-align: center;
-  padding-top: 1%;
-}
-.gallery p {
-  padding-left: 3%;
-  padding-right: 3%;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
 
-.gallery-grid img {
-  width: 100%;
-  border-radius: 5px;
-  filter: sepia(30%); /* Add Sepia Effect for Vintage Look */
-  border: 2px solid #C69B7B;
-}
-
-
-.gallery-card {
-  background-color: #F5F2E8; /* Creamy Background */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border: 1px solid #C69B7B; /* Soft Beige Border */
-}
-.gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-card img {
-  width: 100%;
-  border-radius: 5px;
-  filter: sepia(30%); /* Add Sepia Effect for Vintage Look */
-}
-
-.gallery-card h3 {
-  font-family: 'Georgia', serif;
-  color: #7A4F3D; /* Muted Brown */
-}
-
-.gallery-card p {
-  font-family: 'Courier New', Courier, monospace;
-  color: #333333;
-}
 
 
 
@@ -443,3 +432,4 @@ footer {
   text-align: left;
   padding: 1rem;
 }
+
