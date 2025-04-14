@@ -1,3 +1,7 @@
+the two researchers card should have the same size 
+
+html 
+
 <!DOCTYPE html>
 <html lang="fil">
 <head>
@@ -14,10 +18,9 @@
 <nav class="navbar">
     
     <ul class="nav-links">
-      <li><a href="#home" class="nav-link home"> Pangunahing Pahina <i class="fas fa-home"></i> </a></li>
-      <li><a href="#kwento" class="nav-link kwento">Kuwento  <i class="fas fa-book"></i> </a></li>
-      <li><a href="#galeriya" class="nav-link galeriya">Galeriya <i class="fas fa-images"></i>  </a></li>
-      <li><a href="#mananaliksik" class="nav-link mananaliksik">Mananaliksik <i class="fas fa-user-graduate"></i> </a></li>
+      <li><a href="#home" class="nav-link home"> <i class="fas fa-home"> </i>Pangunahing Pahina </a></li>
+      <li><a href="#kwento" class="nav-link kwento"><i class="fas fa-book"></i> Kuwento  </a></li>
+      <li><a href="#mananaliksik" class="nav-link mananaliksik"> <i class="fas fa-user-graduate"></i> Mananaliksik  </a></li>
     </ul>
   
   
@@ -30,9 +33,13 @@
     <!-- Home Section -->
     <section id="home" class="section">
       <div class="hero">
-        <h1>E-SAKAY: Ang Kulturang Traysikel sa Daet</h1>
-        <p>Ang website na ito ay naglalaman ng mga impormasyon at naratibo patungkol sa traysikel bilang pangunahing uri ng transportasyon sa bayan ng Daet, Camarines Norte.</p>
+       <div class="text-bg-box">
+        <h1>E-SAKAY</h1>
+        <img src="image/logo.png" class="home-logo">
+        <p>Ang logo na ito ay isang makulay na representasyon ng buhay ng mga traysikel drayber sa bayan ng Daet Camarines Norte, kung saan ang "E-SAKAY" ay nangangahulugang "Elektroniko, Serbisyo, Adhika, Kuwento, Aspekto, Yugto," naglalayong itampok ang kanilang mga kuwento sa pamamagitan ng makabagong teknolohiya. Ang mga kulay dilaw, itim, at puti ay sumisimbolo sa iba't ibang aspeto ng kanilang kabuhayan: ang dilaw sa pag-asa, ang itim sa mga hamon at kalungkutan, at ang puti sa mga pagkakataon ng kasaganahan. Sa gitna ng logo, ang simbolo ng tao, traysikel, at araw ay nagpapakita ng malapit na ugnayan sa pagitan ng mga tao at mga traysikel drayber, na nagbibigay-diin sa kanilang mahalagang papel sa pang-araw-araw na buhay at ang mga kuwentong nabubuo sa bawat sakay.</p>
+      
         <a href="#kwento" class="btn">Tingnan ang Kuwento</a>
+      </div>
       </div>
     </section>
 
@@ -89,7 +96,10 @@ na tama ang bayad at natapos nang maayos ang reklamo.
   </div>
   <!-- Insert Cartoon Animation Here -->
   <div class="animation-placeholder">
-    <p>[Insert Tsuper Cartoon Animation Here]</p>
+    <video width="90%" controls loop>
+      <source src="video/KUWENTONG PASAHERO.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
 
@@ -121,9 +131,14 @@ ang napagbintangan sa nawawalang wallet ng pasahero.
     
   </div>
   <!-- Insert Cartoon Animation Here -->
-  <div class="animation-placeholder">
-    <p>[Insert Tsuper Cartoon Animation Here]</p>
-  </div>
+
+<div class="animation-placeholder">
+  <video width="90%" controls loop>
+    <source src="video/KUWENTONG KATATAKOTAN.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 </div>
 
 
@@ -154,42 +169,15 @@ pamamasada, napagtapos niya ang anak.
   </div>
   <!-- Insert Cartoon Animation Here -->
   <div class="animation-placeholder">
-    <p>[Insert Tsuper Cartoon Animation Here]</p>
+    <video width="90%" controls autoplay playsinline>
+      <source src="video/KUWENTONG KATATAWANAN.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
-</div>
 
 </section>
 
 
-    <!-- Galerya Section -->
-    <section id="galeriya" class="section">
-      <div class="gallery">
-      <h2>Galeriya</h2>
-      <p>Mga larawan ng traysikel at mga kalye sa Daet, Camarines Norte.</p>
-    </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-card">
-        <img src="image/tricycle.jpg" alt="Traysikel">
-        <h3>Tricycle</h3>
-        </div>
-
-        <div class="gallery-card">
-          <img src="image/tricycle.jpg" alt="Traysikel">
-          <h3>Tricycle</h3>
-        </div>
-
-        <div class="gallery-card">
-          <img src="image/tricycle.jpg" alt="Traysikel">
-          <h3>Tricycle</h3>
-        </div>
-
-        <div class="gallery-card">
-          <img src="image/tricycle.jpg" alt="Traysikel">
-          <h3>Tricycle</h3>
-        </div>
-      </div>
-    </section>
 
 
 
@@ -206,9 +194,9 @@ pamamasada, napagtapos niya ang anak.
     <div class="researcher-card">
       <img src="image/lawrenze.jpg" alt="Researcher 1">
       <h3>Lawrenze Andrei D. Campita</h3>
-      <p>Kurso: Batsilyer sa Sekondarya Mehora sa Filipino</p>
+      <p>Kurso: Batsilyer sa Agham ng Edukasyong Pansekundarya Medyor sa Filipino</p>
       <p> Kapanganakan: Marso, 27, 2004 </p>
-       <p>Tirahan: P-2 Bulhao, Labo, Camarines Norte </p> 
+       <p>Tirahan: Purok 2, Bulhao, Labo, Camarines Norte </p> 
        <p> Contact No.: 09075362345 </p>
       <p> Email: campitalawrenze@gmail.com </p>
     </div>
@@ -233,5 +221,75 @@ pamamasada, napagtapos niya ang anak.
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    // Get all sections and nav links
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    window.addEventListener('scroll', () => {
+      let current = '';
+  
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute('id');
+        }
+      });
+  
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+  function showContent(id) {
+    const contents = document.querySelectorAll('.hidden-content');
+    contents.forEach(content => {
+      content.classList.remove('active');
+    });
+
+    const selectedContent = document.getElementById(id);
+    if (selectedContent) {
+      selectedContent.classList.add('active');
+    }
+    // Highlight active button
+    document.querySelectorAll('.button-container button').forEach(btn => btn.classList.remove('active-btn'));
+    event.target.classList.add('active-btn');
+  }
+  
+
+  
+
+  // Function to play the video with sound and fullscreen
+function playVideo() {
+    const video = document.getElementById('myVideo');
+    
+    // Unmute the video if it was muted
+    video.muted = false;
+
+    video.play().then(() => {
+        // Attempt to enter fullscreen mode after video starts playing
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { // Safari
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { // IE11
+            video.msRequestFullscreen();
+        }
+    }).catch(error => {
+        console.error('Playback failed:', error);
+        alert('Browser blocked autoplay. Please try clicking again.');
+    });
+}
+
+
+
+  </script>
+  
 </body>
 </html>
+
